@@ -2,10 +2,10 @@
 Web Scraping with Python
 
 ### Static Scrapers
-[webscraper_1.py]("")  
+[webscraper_1.py]("https://github.com/ykashou92/PyScraping/blob/master/webscraper_1.py")  
 A very simple webscraper, that extracts data from http://econpy.pythonanywhere.com/ex/001.html and tabulates it.
 
-[webscraper_2.py]("")  
+[webscraper_2.py]("https://github.com/ykashou92/PyScraping/blob/master/webscraper_2.py")  
 A slightly more complex webscraper, that extracts data from https://en.wikipedia.org/wiki/List_of_cryptocurrencies and tabulates it.
 
 [webscraper_3.py]("")  
