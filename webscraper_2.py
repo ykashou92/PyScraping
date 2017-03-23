@@ -27,10 +27,12 @@ all_tables = soup.find_all("table")
 table = soup.find('table', { "class" : 'wikitable sortable'})
 table
 
+# If page has more than one table, find out the length (columns) of these tables
 for i, row in enumerate(soup.findAll("tr")):
     cells = row.findAll("td")
     print(i, len(cells))
-
+    
+# Create empty lists of desired columns
 release = [ ] # 1
 currency = [ ] # 2
 symbol = [ ] # 3
@@ -49,5 +51,8 @@ print(currency)
 print(symbol)
 print(founder)
 
+# Create a pandas dataframe of the data
 df = pd.DataFrame({'Release': release, 'Currency': currency, 'Symbol': symbol, 'Founder': founder})
+
+# Display the first 3 rows
 df[:3]
