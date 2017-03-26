@@ -57,5 +57,17 @@ df = pd.DataFrame({'Release': release, 'Currency': currency, 'Symbol': symbol, '
 # Display the first 5 rows
 df[:5]
 
-# Cleanign has not been done yet and needs to be done manually
-# The data frame has textual artifacts such as /n and links attached to it.
+# The data frame has textual artifacts such as \n. So we need to remove that.
+clean_df = df.replace('\n', '')
+
+# The data frame still has textual artifacts such as reference numbers enclosed in square brackets.
+clean_df['Release'] = clean_df['Release'].str.get(0)
+clean_df['Currency'] = clean_df['Currency'].str.get(0)
+clean_df['Symbol'] = clean_df['Symbol'].str.get(0)
+clean_df['Founder'] = clean_df['Founder'].str.get(0)        
+clean_df
+
+clean_df.set_value(3, "Founder", "[Baldur Odinsson (pseudonym)]")
+clean_df.set_value(8, "Founder", "Evan Dufffield & Kyle Hagan")
+clean_df.set_value(24, "Founder", "Chris Larsen & Jed McCaleb")
+clean_df.to_csv("clean_df.csv")
