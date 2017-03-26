@@ -54,5 +54,8 @@ print(founder)
 # Create a pandas dataframe of the data
 df = pd.DataFrame({'Release': release, 'Currency': currency, 'Symbol': symbol, 'Founder': founder})
 
-# Display the first 3 rows
-df[:3]
+# Display the first 5 rows
+df[:5]
+
+# Cleanign has not been done yet and needs to be done manually
+# The data frame has textual artifacts such as /n and links attached to it.
