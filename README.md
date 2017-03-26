@@ -5,7 +5,7 @@ Web Scraping with Python
 [webscraper_1.py](https://github.com/ykashou92/PyScraping/blob/master/webscraper_1.py) **Complete**  
 A very simple webscraper, that extracts data from http://econpy.pythonanywhere.com/ex/001.html and tabulates it.
 
-[webscraper_2.py](https://github.com/ykashou92/PyScraping/blob/master/webscraper_2.py) **Almost Complete**  
+[webscraper_2.py](https://github.com/ykashou92/PyScraping/blob/master/webscraper_2.py) **Complete**  
 A slightly more complex webscraper, that extracts data from https://en.wikipedia.org/wiki/List_of_cryptocurrencies and tabulates it properly.
 
 [webscraper_3.py]("") **In Progress**  
